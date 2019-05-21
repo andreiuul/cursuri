@@ -32,7 +32,7 @@ public enum Registru {
 
     public void stergeContribuabil(Contribuabil contribuabil) {
 
-        for (int i = 0; i < counter-1; i++) {
+        for (int i = 0; i < counter; i++) {
 
             if (contribuabil.getId() == contribuabili[i].getId()) {
                 for (int j = i; j < counter-1; j++) {
