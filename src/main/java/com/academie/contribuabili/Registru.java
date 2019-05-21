@@ -31,9 +31,22 @@ public enum Registru {
     }
 
     public void stergeContribuabil(Contribuabil contribuabil) {
-        //sters
-    }
 
+        for (int i = 0; i < counter-1; i++) {
+
+            if (contribuabil.getId() == contribuabili[i].getId()) {
+                for (int j = i; j < counter-1; j++) {
+                    contribuabili[j] = contribuabili[j + 1];
+
+                }
+                contribuabili[counter-1] = null;
+                counter--;
+                break;
+            }
+
+        }
+
+    }
     public int getNumarContribuabili() {
         return counter;
     }

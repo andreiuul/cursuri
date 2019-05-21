@@ -41,13 +41,20 @@ public class Main {
         Contribuabil c1 = new ContribuabilTest();
         Contribuabil c2 = new ContribuabilTest();
         Contribuabil c3 = new ContribuabilTest();
-        System.out.println(c1.getId());
-        System.out.println(c2.getId());
-        System.out.println(c3.getId());
+        //System.out.println(c1.getId());
+        //System.out.println(c2.getId());
+        //System.out.println(c3.getId());
 
         Registru.REGISTRU.adaugaContribuabil(c1);
         Registru.REGISTRU.adaugaContribuabil(c2);
         Registru.REGISTRU.adaugaContribuabil(c3);
+
+        System.out.println(Registru.REGISTRU.getNumarContribuabili());
+
+        Registru.REGISTRU.stergeContribuabil(c2);
+
+        System.out.println(Registru.REGISTRU.getNumarContribuabili());
+
 
     }
 }
